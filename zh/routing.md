@@ -31,3 +31,7 @@ head('/', function() {
   header('custom-header: hello Pinatra!');
 });
 ```
+
+::: 提示
+只有第一个路由会被响应。
+:::

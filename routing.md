@@ -31,3 +31,7 @@ head('/', function() {
   header('custom-header: hello Pinatra!');
 });
 ```
+
+::: tip
+The first route that matches the request is invoked.
+:::
