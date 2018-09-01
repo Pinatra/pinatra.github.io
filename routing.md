@@ -1,6 +1,6 @@
-# 路由
+# Routing
 
-Pinatra 支持 `GET` `POST` `PUT` `PATCH` `DELETE` `OPTIONS` `HEAD` 几种路由方式，用法非常简单：
+Pinatra supports `GET` `POST` `PUT` `PATCH` `DELETE` `OPTIONS` `HEAD` http methods, which are very simple：
 
 ```php
 get('/', function() {

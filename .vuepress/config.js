@@ -32,8 +32,16 @@ module.exports = {
           { text: 'Source', link: 'https://github.com/Pinatra/framework' }
         ],
         sidebar: {
-          '/': [],
-          '/nested/': []
+          '/': [
+            {
+              title: 'Guide',
+              collapsable: false,
+              children: [
+                ['', 'Introduction'],
+                'routing'
+              ]
+            }
+          ]
         }
       },
       '/zh/': {
@@ -60,7 +68,7 @@ module.exports = {
               title: '指南',
               collapsable: false,
               children: [
-                ['', '首页'],
+                ['', '介绍'],
                 'routing'
               ]
             }
