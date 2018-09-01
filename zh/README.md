@@ -1,20 +1,20 @@
-![logo](./assets/Pinatra.jpg)
+![logo](../assets/Pinatra.jpg)
 
 <br>
 
-> ### A PHP copy of Sinatra: a DSL for quickly creating web applications in PHP with minimal effort.
+> ### PHP 版本的 Sinatra，极其轻量优雅的 web 领域专用语言（框架）
 
 <br>
 
-# GETTING STARTED
+# 起步
 
-### install
+### 安装
 
 ```bash
 composer require pinatra/framework=dev-master
 ```
 
-### run your own application!
+### 运行第一个 Pinatra 应用！
 
 ```php
 require __DIR__.'/../vendor/autoload.php';
