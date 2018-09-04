@@ -39,7 +39,9 @@ module.exports = {
               collapsable: false,
               children: [
                 ['', 'Introduction'],
-                'routing'
+                'install',
+                'routing',
+                'kernel'
               ]
             }
           ]
@@ -71,7 +73,9 @@ module.exports = {
               collapsable: false,
               children: [
                 ['', '介绍'],
-                'routing'
+                'install',
+                'routing',
+                'kernel'
               ]
             }
           ]
