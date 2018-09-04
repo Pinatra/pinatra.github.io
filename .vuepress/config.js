@@ -19,6 +19,7 @@ module.exports = {
   themeConfig: {
     locales: {
       '/': {
+        lastUpdated: 'Last Updated',
         selectText: 'Languages',
         label: 'English',
         serviceWorker: {
@@ -45,6 +46,7 @@ module.exports = {
         }
       },
       '/zh/': {
+        lastUpdated: '最近更新',
         // 多语言下拉菜单的标题
         selectText: '选择语言',
         // 该语言在下拉菜单中的标签
