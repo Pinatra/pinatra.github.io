@@ -42,6 +42,7 @@ module.exports = {
                 'install',
                 'routing',
                 'controller',
+                'view',
                 'kernel'
               ]
             }
@@ -77,6 +78,7 @@ module.exports = {
                 'install',
                 'routing',
                 'controller',
+                'view',
                 'kernel'
               ]
             }
