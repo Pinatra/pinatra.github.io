@@ -19,7 +19,7 @@ composer require pinatra/framework=dev-master
 ```php
 require __DIR__.'/../vendor/autoload.php';
 
-get('/hi', function() {
+get('hi', function() {
   echo "I am Pinatra framework!";
 });
 ```

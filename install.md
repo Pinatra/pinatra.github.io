@@ -3,7 +3,6 @@
 ## Environment require
 
 * PHP > 7.0
-* PHP PDO extension
 * Composer
 
 ### Composer
@@ -89,7 +88,7 @@ touch index.php
 
 require __DIR__.'/../vendor/autoload.php';
 
-get('/hi', function() {
+get('hi', function() {
   echo "I am Pinatra framework!";
 });
 ```

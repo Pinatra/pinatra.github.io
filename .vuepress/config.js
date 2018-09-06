@@ -41,6 +41,7 @@ module.exports = {
                 ['', 'Introduction'],
                 'install',
                 'routing',
+                'controller',
                 'kernel'
               ]
             }
@@ -75,6 +76,7 @@ module.exports = {
                 ['', '介绍'],
                 'install',
                 'routing',
+                'controller',
                 'kernel'
               ]
             }
