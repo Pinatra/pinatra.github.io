@@ -8,8 +8,8 @@
 
 Pinatra 路由提供了一个十分简易的 `Controller@method` 的调用方式，其背后就是如下简单的操作步骤：
 
-1. 定义控制器的根命名空间，默认为 '\'，即根空间。
-2. 拿到形如 `Controller@method` 的回调请求时，直接 new 对象，再调方法并传入参数。
+1. 定义控制器的根命名空间，默认为 '\\'，即根空间。
+2. 拿到形如 `Controller@method` 的响应请求时，直接 new 对象，再调用方法并传入参数。
 
 ```php
 // 伪代码
@@ -22,9 +22,9 @@ $b = $method; // 'home'
 
 把控制器装入 Pinatra 需要三步。~~第一步，开冰箱门（不好意思窜台了）。~~
 
-## 设置命名空间
+## 1. 设置命名空间
 
-设置命名空间的主要目的是为了自动加载，就是让我们不必再调用类之前先手动 require 文件。
+设置命名空间的主要目的是为了自动加载，就是让我们不必在调用类之前先手动 require 文件。
 
 PSR-4 规范是让命名空间默认和文件夹以及文件名的结构相同，最省事。PSR-0 规范允许每个文件内部随意设置，缺点是每次修改就要重新运行 `composer dump-autoload`。
 
@@ -43,14 +43,15 @@ Pinatra 推荐使用 PSR-4 自动加载规范，具体操作如下。
 > 
 > 3. 运行命令 `composer dump-autoload`
 
-## 让 Pinatra 知道
+## 2. 让 Pinatra 知道
 
 在 `public/index.php` 中增加一行代码：
+
 ```php
 \Pinatra\Routing\Router::$baseNamespace = '\\Controllers\\';
 ```
 
-## 尝试一下
+## 3. 尝试一下
 
 ### 创建控制器
 
