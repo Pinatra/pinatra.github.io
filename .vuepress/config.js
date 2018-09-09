@@ -43,6 +43,7 @@ module.exports = {
                 'routing',
                 'controller',
                 'view',
+                'model',
                 'kernel'
               ]
             }
@@ -79,6 +80,7 @@ module.exports = {
                 'routing',
                 'controller',
                 'view',
+                'model',
                 'kernel'
               ]
             }
