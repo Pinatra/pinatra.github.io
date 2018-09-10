@@ -43,7 +43,9 @@ module.exports = {
                 'routing',
                 'controller',
                 'view',
-                'kernel'
+                'model',
+                'kernel',
+                'benchmark'
               ]
             }
           ]
@@ -79,7 +81,9 @@ module.exports = {
                 'routing',
                 'controller',
                 'view',
-                'kernel'
+                'model',
+                'kernel',
+                'benchmark'
               ]
             }
           ]
