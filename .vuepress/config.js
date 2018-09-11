@@ -30,7 +30,7 @@ module.exports = {
         },
         algolia: {},
         nav: [
-          { text: 'Source', link: 'https://github.com/Pinatra/framework' }
+          { text: 'Source', link: 'https://github.com/Pinatra/Pinatra' }
         ],
         sidebar: {
           '/': [
@@ -68,7 +68,7 @@ module.exports = {
         // 当前 locale 的 algolia docsearch 选项
         algolia: {},
         nav: [
-          { text: '源代码', link: 'https://github.com/Pinatra/framework' }
+          { text: '源代码', link: 'https://github.com/Pinatra/Pinatra' }
         ],
         sidebar: {
           '/zh/': [
