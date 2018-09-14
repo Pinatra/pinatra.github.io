@@ -7,7 +7,7 @@
     <meta name="description" content="PHP 版本的 Sinatra，极其轻量优雅的 web 领域专用语言（框架）">
     
     
-    <link rel="preload" href="/assets/css/0.styles.73742341.css" as="style"><link rel="preload" href="/assets/js/app.7e77879e.js" as="script"><link rel="preload" href="/assets/js/15.f1c99054.js" as="script"><link rel="prefetch" href="/assets/js/4.2a5324db.js"><link rel="prefetch" href="/assets/js/2.9834f0cc.js"><link rel="prefetch" href="/assets/js/3.48f1bc30.js"><link rel="prefetch" href="/assets/js/5.5810eb28.js"><link rel="prefetch" href="/assets/js/6.1aa8d3d7.js"><link rel="prefetch" href="/assets/js/7.1b26715e.js"><link rel="prefetch" href="/assets/js/8.95e23443.js"><link rel="prefetch" href="/assets/js/9.32b41b0e.js"><link rel="prefetch" href="/assets/js/10.20f55d86.js"><link rel="prefetch" href="/assets/js/11.395616c7.js"><link rel="prefetch" href="/assets/js/12.c102fc6e.js"><link rel="prefetch" href="/assets/js/13.777839b7.js"><link rel="prefetch" href="/assets/js/14.ea6ac3c7.js"><link rel="prefetch" href="/assets/js/16.4ae879c3.js"><link rel="prefetch" href="/assets/js/17.e7aae604.js"><link rel="prefetch" href="/assets/js/18.584449ed.js"><link rel="prefetch" href="/assets/js/19.fcb6292d.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.41d79f37.js">
+    <link rel="preload" href="/assets/css/0.styles.73742341.css" as="style"><link rel="preload" href="/assets/js/app.c7c2546b.js" as="script"><link rel="preload" href="/assets/js/15.c5928832.js" as="script"><link rel="prefetch" href="/assets/js/4.dd1ee4a1.js"><link rel="prefetch" href="/assets/js/2.9834f0cc.js"><link rel="prefetch" href="/assets/js/3.48f1bc30.js"><link rel="prefetch" href="/assets/js/5.5810eb28.js"><link rel="prefetch" href="/assets/js/6.1aa8d3d7.js"><link rel="prefetch" href="/assets/js/7.ab69710d.js"><link rel="prefetch" href="/assets/js/8.95e23443.js"><link rel="prefetch" href="/assets/js/9.32b41b0e.js"><link rel="prefetch" href="/assets/js/10.20f55d86.js"><link rel="prefetch" href="/assets/js/11.395616c7.js"><link rel="prefetch" href="/assets/js/12.7418dee3.js"><link rel="prefetch" href="/assets/js/13.777839b7.js"><link rel="prefetch" href="/assets/js/14.ea6ac3c7.js"><link rel="prefetch" href="/assets/js/16.4ae879c3.js"><link rel="prefetch" href="/assets/js/17.e7aae604.js"><link rel="prefetch" href="/assets/js/18.584449ed.js"><link rel="prefetch" href="/assets/js/19.fcb6292d.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.41d79f37.js">
     <link rel="stylesheet" href="/assets/css/0.styles.73742341.css">
   </head>
   <body>
@@ -19,10 +19,10 @@
 </code></pre></div><h3 id="composer-初始化"><a href="#composer-初始化" aria-hidden="true" class="header-anchor">#</a> composer 初始化</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">cd</span> blog
 composer self-update
 composer init
-</code></pre></div><p>之后一路回车，直到 <code>Search for a package</code>，输入 <code>pinatra/framework</code> 回车，出现 <code>Enter the version constraint to require (or leave blank to use the latest version)</code> 输入 <code>dev-master</code>，之后继续一路回车直到交互结束。</p> <p>这时，执行 <code>ls -a</code> 出现下图所示即为成功：</p> <p><img src="/assets/img/1.1b132699.jpg" alt="ls"></p> <h3 id="查看-composer-json"><a href="#查看-composer-json" aria-hidden="true" class="header-anchor">#</a> 查看 composer.json</h3> <p>此时 composer.json 的内容应该如下：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+</code></pre></div><p>之后一路回车，直到 <code>Search for a package</code>，输入 <code>pinatra/framework</code> 回车，出现 <code>Enter the version constraint to require (or leave blank to use the latest version)</code> 输入 <code>~0.0</code>，之后继续一路回车直到交互结束。</p> <p>这时，执行 <code>ls -a</code> 出现下图所示即为成功：</p> <p><img src="/assets/img/1.1b132699.jpg" alt="ls"></p> <h3 id="查看-composer-json"><a href="#查看-composer-json" aria-hidden="true" class="header-anchor">#</a> 查看 composer.json</h3> <p>此时 composer.json 的内容应该如下：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
     <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;user/blog&quot;</span><span class="token punctuation">,</span>
     <span class="token property">&quot;require&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-        <span class="token property">&quot;pinatra/framework&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dev-master&quot;</span>
+        <span class="token property">&quot;pinatra/framework&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~0.0&quot;</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token property">&quot;authors&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
         <span class="token punctuation">{</span>
@@ -43,7 +43,7 @@ get<span class="token punctuation">(</span><span class="token string">'hi'</span
   <span class="token keyword">echo</span> <span class="token string">&quot;I am Pinatra framework!&quot;</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><h3 id="使用-php-自带的单线程-web-server-让我们的网站跑起来！"><a href="#使用-php-自带的单线程-web-server-让我们的网站跑起来！" aria-hidden="true" class="header-anchor">#</a> 使用 PHP 自带的单线程 web server 让我们的网站跑起来！</h3> <p>确保此时命令行的当前路径在 public 文件夹下，之后运行如下命令：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>php -S 0.0.0.0:8000
-</code></pre></div><h3 id="查看成果"><a href="#查看成果" aria-hidden="true" class="header-anchor">#</a> 查看成果</h3> <p>访问 <code>http://0.0.0.0:8000/hi</code>，如果你的结果如下图所示，说明你成功了！</p> <p><img src="/assets/img/3.b07797e6.jpg" alt="success"></p></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新: </span> <span class="time">2018/9/6 下午3:24:04</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
+</code></pre></div><h3 id="查看成果"><a href="#查看成果" aria-hidden="true" class="header-anchor">#</a> 查看成果</h3> <p>访问 <code>http://0.0.0.0:8000/hi</code>，如果你的结果如下图所示，说明你成功了！</p> <p><img src="/assets/img/3.b07797e6.jpg" alt="success"></p></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新: </span> <span class="time">2018/9/14 下午1:15:31</span></div></div> <div class="page-nav"><p class="inner"><span class="prev">
         ←
         <a href="/zh/" class="prev router-link-active">
           介绍
@@ -52,6 +52,6 @@ get<span class="token punctuation">(</span><span class="token string">'hi'</span
         </a>
         →
       </span></p></div> </div> <!----></div></div>
-    <script src="/assets/js/15.f1c99054.js" defer></script><script src="/assets/js/app.7e77879e.js" defer></script>
+    <script src="/assets/js/15.c5928832.js" defer></script><script src="/assets/js/app.c7c2546b.js" defer></script>
   </body>
 </html>
