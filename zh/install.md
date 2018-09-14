@@ -29,7 +29,7 @@ composer self-update
 composer init
 ```
 
-之后一路回车，直到 `Search for a package`，输入 `pinatra/framework` 回车，出现 `Enter the version constraint to require (or leave blank to use the latest version)` 输入 `dev-master`，之后继续一路回车直到交互结束。
+之后一路回车，直到 `Search for a package`，输入 `pinatra/framework` 回车，出现 `Enter the version constraint to require (or leave blank to use the latest version)` 输入 `~0.0`，之后继续一路回车直到交互结束。
 
 这时，执行 `ls -a` 出现下图所示即为成功：
 
@@ -43,7 +43,7 @@ composer init
 {
     "name": "user/blog",
     "require": {
-        "pinatra/framework": "dev-master"
+        "pinatra/framework": "~0.0"
     },
     "authors": [
         {

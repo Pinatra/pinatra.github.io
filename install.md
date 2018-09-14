@@ -29,7 +29,7 @@ composer self-update
 composer init
 ```
 
-Then press Enter until `Search for a package`, type `pinatra/framework` and press Enter. When you get `version of the constraint to require (or leave blank to use the latest version)`, type `dev-master`, then continue press Enter all the way until the end of the interaction.
+Then press Enter until `Search for a package`, type `pinatra/framework` and press Enter. When you get `version of the constraint to require (or leave blank to use the latest version)`, type `~0.0`, then continue press Enter all the way until the end of the interaction.
 
 At this point, executing `ls -a` appears as shown below:
 
@@ -43,7 +43,7 @@ Now the content of composer.json should be as follows:
 {
     "name": "user/blog",
     "require": {
-        "pinatra/framework": "dev-master"
+        "pinatra/framework": "~0.0"
     },
     "authors": [
         {

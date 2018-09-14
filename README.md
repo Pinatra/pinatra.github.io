@@ -13,7 +13,7 @@
 ### install
 
 ```bash
-composer require pinatra/framework=dev-master
+composer require pinatra/framework=~0.0
 ```
 
 ### run your own application!

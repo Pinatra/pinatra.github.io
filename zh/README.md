@@ -14,7 +14,7 @@
 ### 安装
 
 ```bash
-composer require pinatra/framework=dev-master
+composer require pinatra/framework=~0.0
 ```
 
 ### 运行第一个 Pinatra 应用！
