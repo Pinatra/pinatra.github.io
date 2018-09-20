@@ -151,7 +151,7 @@ foreach ($articles as $article) {
 
 [Eloquent Documentation](https://laravel.com/docs/5.7/eloquent)
 
-## Direct execution an SQL
+## Execution an SQL Directly
 
 ### Select Query
 
