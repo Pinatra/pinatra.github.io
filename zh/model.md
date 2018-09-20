@@ -57,9 +57,6 @@ namespace Model;
 class Article extends \Pinatra\Model\Model
 {
 }
-
-# controllers/HomeController.php
-
 ```
 
 ### 新建数据库中的表
