@@ -8,7 +8,7 @@ The Model base class is [\Pinatra\Model\Model](https://github.com/Pinatra/Pinatr
 
 1. Lazy loading, no initialization when not using Model, reducing unnecessary resource consumption
 2. Eloquent is powerful and of high quality, it is the most important reason for Laravel's strength.
-3. The powerful Model base class compresses the MVC architecture into an MC architecture, which greatly reduces the middle-level functions and reduces the editing of the same piece of code when multi-person collaboration. This is a huge improvement in software engineering. This is my deep experience after using Laravel in the past few years and the system is getting bigger and bigger.
+3. The powerful Model base class compresses the MVC architecture into an VC architecture, which greatly reduces the middle-level functions and reduces the editing of the same piece of code when multi-person collaboration. This is a huge improvement in software engineering. This is my deep experience after using Laravel in the past few years and the system is getting bigger and bigger.
 
 ## Start Using
 
